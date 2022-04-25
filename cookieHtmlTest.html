@@ -5,29 +5,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <h1>Jarvy's Castle</h1>
-    <img src="https://media.discordapp.net/attachments/404887948480479234/962488148426907668/IMG_20220409_180103.jpg?width=399&height=532">
-    <h2>Just look at them!</h2>
-    <br/>
-    <h4>This is the section heading</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Praesent tempor convallis leo a bibendum. 
-        Mauris ullamcorper nibh in suscipit aliquet. 
-        Aliquam vitae imperdiet lorem, nec pharetra arcu. 
-        Aliquam eleifend venenatis est vitae dictum. 
-        Nullam quis elit a mauris rhoncus rhoncus sed et turpis. 
-        In mattis tincidunt nulla, in suscipit nibh varius at. 
-        Sed venenatis vel nunc vitae condimentum. Nunc sit amet accumsan neque. 
-        Curabitur scelerisque fermentum mi eu interdum. Pellentesque arcu erat, 
-        varius a leo pharetra, ornare accumsan lacus. Praesent tincidunt libero 
-        aliquam metus semper, vel vestibulum eros facilisis. In nec mi vel purus 
-        eleifend vehicula quis vitae ex.</p>
-    <p>This is a new paragraph that we are using to test a new branch through
-        git. I am practicing pushing and pulling from github.
-    </p>
+<body class="main_styles" id="container">
+    <header class="header_nav"><h4>Inside of header - let's add a navbar with some essential links 
+        <a class="link" href="http://www.google.com">Home</a>
+        <a class="link" href="http://www.google.com">About</a>
+        <a class="link" href ="http://www.google.com">Contact</a></h4>
+    </header>
+    <h1>Here is the main section of our page - it consists of new articles</h1>
+    <h1>Article 1 - 1995 was a pretty crazy year for programming languages!</h1>
+    <p>Don't believe me? Just check this table out:</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Language</th>
+                <th>Designed By</th>
+                <th>First Appeared</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Python</td>
+                <td>Guido van Rossum</td>
+                <td>1991</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Ruby</td>
+                <td>Yukihiro Matsumoto ("Matz")</td>
+                <td>1995</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>JavaScript</td>
+                <td>Brendan Eich</td>
+                <td>1995</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>James Gosling</td>
+                <td>1995</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>PHP</td>
+                <td>Rasmus Lerdorf</td>
+                <td>1995</td>
+            </tr>
+        </tbody>
+    </table>
+    <article class="article2">
+        <h1>Article 2 - Ippsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vestibulum tempus velit eget quam imperdiet pellentesque. 
+            Cras vel cursus odio. Curabitur lacus tortor, gravida et turpis accumsan, 
+            mollis pulvinar erat. Ut tristique viverra felis sit amet bibendum. 
+            Curabitur venenatis orci et fringilla finibus. Morbi sit amet volutpat 
+            arcu. Maecenas finibus vitae turpis quis dictum.</p>
+    </article>
+    
+    <form class="forms" action="#">
+        <h2>General Information</h2>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <label for="dateOfBirth">Date Of Birth</label>
+            <input type="text" id="dateOfBirth" value="mm/dd/yyyy">
+        </div>
+        <div>
+            <label><h2>Essential Questions</h2></label>
+            <label>What kind of work do you need?</label>
+            <br>
+            <input type="checkbox" id="programming">
+            <label for="programming">Programming</label>
+            <br>
+            <input type="checkbox" id="design">
+            <label for="design">Design</label>
+            <br>
+            <input type="checkbox" id="singing">
+            <label for="singing">Singing</label>
+            <br>
+            <input type="checkbox" id="comedy">
+            <label for="comedy">Comedy</label>
+        </div>
+        <br>
+        <div>
+            <label>How interested are you in our design skills?</label>
+            <br>
+            <input type="radio" id="veryLow">
+            <label for="veryLow">Very Low</label>
+            <br>
+            <input type="radio" id="low">
+            <label for="low">Low</label>
+            <br>
+            <input type="radio" id="medium">
+            <label for="medium">Medium</label>
+            <br>
+            <input type="radio" id="high">
+            <label for="high">High</label>
+            <br>
+            <input type="radio" id="veryHigh">
+            <label for="veryHigh">Very High</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <br>
+    <div>
+        <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/1VOUX9YY9IhvZYXEhjNbjg?utm_source=generator" 
+        width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; 
+        encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+    <br>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KPh9qI7L8_4" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <footer><h5>Here is our footer - let's make sure we copyright this!</h5></footer>
 </body>
 </html>
 
